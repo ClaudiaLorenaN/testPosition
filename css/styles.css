@@ -1,151 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
-* 
-{   margin: 0;
-    font-family: Roboto;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-header{
-    position: fixed;
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/********** ESTILOS PARA EL HEADER **********/
+
+header p {
+  background-color: #1cd1b0;
+  padding: 2px 0px 2px 10px;
+}
+
+h1 {
+  background-color: #00669f;
+  color: white;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/********** ESTILOS PARA EL MAIN **********/
+
+section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+section article {
+  background-color: #f3f3f3;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 300px;
+}
+
+section article .contenedor {
+  height: 200px;
+  width: 300px;
+  border-radius: 16px 16px 0 0;
+  background-size: cover;
+}
+
+section article .contenedor i {
+  font-size: 24px;
+  color: red;
+  padding: 15px;
+}
+
+section article .bgBatman {
+  background-image: url("../img/fondoBatman.png");
+}
+section article .bgMujerMaravilla {
+  background-image: url("../img/fondoMujerMaravilla.png");
+}
+section article .bgHarley {
+  background-image: url("../img/fondoHarleyQuinn.png");
+}
+section article .bgSuperman {
+  background-image: url("../img/fondoSuperman.png");
+}
+
+section article img {
+  border-radius: 50%;
+  width: 125px;
+  position: absolute;
+  top: 130px;
+}
+
+section article h3 {
+  font-size: 24px;
+  margin-top: 70px;
+  text-transform: uppercase;
+}
+
+section article p {
+  font-size: 12px;
+  height: 120px;
+  margin: 10px 20px;
+  text-align: left;
+}
+
+section article button {
+  background-color: #00669f;
+  border: none;
+  color: white;
+
+  margin: 25px;
+  padding: 10px 30px;
+}
+
+/********** ESTILOS PARA EL FOOTER **********/
+
+footer {
+  background-color: #00669f;
+  color: white;
+  padding: 30px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+  position: absolute;
+  right: 25px;
+  width: 100px;
+}
+
+/*******Responsive******/
+
+@media screen and (max-width: 768px) {
+  article .Harley {
     
-}
+    display: none;
+  }
+  
 
-.background1{
-    background-image: url('../img/fondoBatman.png');
-    width: 300PX;
-    height: 193px;
-    margin-top: 100px;
 
 }
-.background2{
-    background-image: url('../img/fondoHarleyQueen.png');
-    width: 300PX;
-    height: 193px;
-    margin-top: 100px;
-}
-.background3{
-    background-image: url('../img/fondoBatman.png');
-    width: 300PX;
-    height: 193px;
-    margin-top: 100px;
 
+
+@media screen and (max-width: 480px){
+  
+  .Harley {
+    display: flex;
     
-}
-
-article{
-    width: 300px;
-    margin-bottom: 100px;
-    display: inline-block;
-    margin: 50px;
-    margin-left: 65px;
-    
-}
-
-.firt-container{
-    background-color: #1CD1B0;
-    padding: 8px 30px;
-    height: 38px;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: left;
-}
-
-i{
-    color: red;
-    position: absolute;
-    left: 21px;
-    top:110px;
-    font-size: 30px;
-}
-
-
-
-.last-container{
-    height: 51px;
-    background-color: #00669F;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    padding-left: 30px;
-    padding-top: 15px;
-    padding-bottom: 15px;   
-    color: #FFF9F9; 
-}
-
-img{
-    border-radius: 100px;
-
-}
-
-h1{
-    background-color: #00669F;
-    height: 101px;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 47px;
-    text-align: left;
-    padding-left: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    box-shadow: 0px 10px 7px 0px #00000040;
-}
-
-h2{
-    text-transform: uppercase;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 35px;
-    text-align: center;    
-    padding-top: 70px;
-}
-
-.container-padre-articles, 
-.container-padre-article1, 
-.container-padre-article2, 
-.container-padre-article3{
-    position: relative;
-    text-align: center;
-}
-
-.image-heroes1, .image-heroes2, .image-heroes3{
-    width: 120px;
-    height: 118px;
-    position: absolute;
-    left:90px;
-    top: 230px;
-}
-
-.text-heroe{
+    display: none;
+  }
+  footer img{
+    position:relative;
+    display: flex;
+    align-self: center;
     padding: 10px;
-}
+  }
+  .containerFooter{
+    display: flex;    
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
 
-button{
-    background-color: #00669F;
-    font-size: 15px;
-    font-weight: 400;
-    color:#F3F3F3;
-    line-height: 18px;
-    text-align: center;
-    display: block;
-    margin: 25px auto 0px;
-    width: 128.78px;
-    height: 48.52px;
-    border: none;
 
-}
-.container-article{
-    box-shadow: 0px 4px 4px 0px #00000040;
-    padding-bottom: 30px;
-    background-color: #F3F3F3;
-    margin-bottom: 90px;
-}
-
-span{
-    text-transform: uppercase;
 }
 
 

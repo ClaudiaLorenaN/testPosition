@@ -1,87 +1,89 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Heroes</title>
+    <title>Héroes</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <p>Descuentos 20%</p>
+    </header>
+    <h1>Super Héroes</h1>
     <main>
-      <div class="firt-container">Descuentos 20%</div>
-      <h1>Heroes</h1>
-      <section class="container-padre-articles">
-        <article class="container-padre-article1">
-          <div class="background1">
-            <img
-              class="image-heroes1"
-              src="img/liga-justicia-batman-kO4H--1024x512@abc 1.png"
-              alt="Batman"
-            />
-            <div><i class="fa-solid fa-heart"></i></div>
+      <section>
+        <article>
+          <div class="contenedor bgBatman">
+            <i class="fa-solid fa-heart"></i>
           </div>
-          <div class="container-article">
-            <h2>Batman</h2>
-            <p class="text-heroe">
-              Bruce Wayne es el único personaje que se identifica como Batman y
-              aparece en Batman, Detective Comics, Batman y Robin, y Batman: The
-              Dark Knight. Dick Grayson vuelve al manto de Nightwing
-            </p>
-            <button>Ver más</button>
-          </div>
+          <img src="img/batman.png" alt="Foto de Batman" />
+          <h3>Batman</h3>
+          <p>
+            Batman (conocido inicialmente como Bat-Man) es un personaje creado
+            por los estadounidenses Bob Kane y Bill Finger, y propiedad de DC
+            Comics. Apareció por primera vez en la historia titulada «El caso
+            del sindicato químico» de la revista Detective Comics N.º 27,
+            lanzada por la editorial National Publications el 30/3/1939.
+          </p>
+          <button>Ver más</button>
         </article>
-        <article class="container-padre-article2">
-          <div class="background2">
-            <img
-              class="image-heroes2"
-              src="img/harleyQueen.png"
-              alt="HarleyQueen"
-            />
-            <div><i class="fa-solid fa-heart"></i></div>
+        <article>
+          <div class="contenedor bgMujerMaravilla">
+            <i class="fa-solid fa-heart"></i>
           </div>
-          <div class="container-article">
-            <h2>Harley Quinn</h2>
-            <p class="text-heroe">
-              La creación de Harley Quinn fue una idea de último minuto
-              propuesta por el escritor estadounidense Paul Dini para modificar
-              una escena del vigésimo-segundo episodio de Batman: la serie
-              animada
-            </p>
-            <button>Ver más</button>
-          </div>
+          <img src="img/fotoMujerMaravilla.png" alt="Foto de Mujer Maravilla" />
+          <h3>Mujer Maravilla</h3>
+          <p>
+            Es una superheroína creada por William Moulton Marston para la
+            editorial DC Comics. Es una princesa guerrera de las Amazonas,
+            pueblo ficticio basado en el de las amazonas de la mitología griega.
+            En su tierra natal es conocida como la princesa Diana de Temiscira
+            pero fuera de esta utiliza la identidad secreta de Diana Prince.
+          </p>
+          <button>Ver más</button>
         </article>
-        <article class="container-padre-article3">
-          <div class="background3">
-            <img
-              class="image-heroes3"
-              src="img/liga-justicia-batman-kO4H--1024x512@abc 1.png"
-              alt="Batman"
-            />
-            <div><i class="fa-solid fa-heart"></i></div>
+        <article class="Harley">
+          <div class="contenedor bgHarley">
+            <i class="fa-solid fa-heart"></i>
           </div>
-          <div class="container-article">
-            <h2>Batman</h2>
-            <p class="text-heroe">
-              Bruce Wayne es el único personaje que se identifica como Batman y
-              aparece en Batman, Detective Comics, Batman y Robin, y Batman: The
-              Dark Knight. Dick Grayson vuelve al manto de Nightwing
-            </p>
-            <button>Ver más</button>
+          <img src="img/harleyQuinn.png" alt="Foto de Harley Quinn" />
+          <h3>Harley Quinn</h3>
+          <p>
+            Harley Quinn es un personaje ficticio creado por los estadounidenses
+            Paul Dini y Bruce Timm para la editorial DC Comics. Quinn hizo su
+            debut en el vigésimo-segundo episodio de Batman: la serie animada,
+            «El favor del Joker», en septiembre de 1992 y se convirtió en una
+            villana recurrente en la serie
+          </p>
+          <button>Ver más</button>
+        </article>
+        <article>
+          <div class="contenedor bgSuperman">
+            <i class="fa-solid fa-heart"></i>
           </div>
+          <img src="img/superman.png" alt="Foto de Superman" />
+          <h3>Superman</h3>
+          <p>
+            Es un superhéroe que apareció por primera vez en los cómics
+            estadounidenses publicados por DC Comics. El personaje fue creado
+            por el escritor estadounidense Jerry Siegel y el artista canadiense
+            Joe Shuster en 1933 cuando ambos se encontraban viviendo en
+            Cleveland, Ohio.
+          </p>
+          <button>Ver más</button>
         </article>
       </section>
     </main>
     <footer>
-      <div class="last-container">
-        <p>Todos los derechos reservados a <span>Front end </span>1</p>
+      <div class="containerFooter">
+        <p>Todos los derechos reservados a FE1</p>
+        <img src="img/gitHub.svg" alt="Logo de gitHub" />
       </div>
     </footer>
   </body>
