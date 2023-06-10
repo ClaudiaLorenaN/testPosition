@@ -100,6 +100,12 @@ section article button {
   padding: 10px 30px;
 }
 
+.Harley {
+  display: flex;
+  
+  display: none;
+}
+
 /********** ESTILOS PARA EL FOOTER **********/
 
 footer {
@@ -121,6 +127,10 @@ footer img {
 /*******Responsive******/
 
 @media screen and (max-width: 768px) {
+  .Harley {
+    display: flex;
+    
+  }
   article .Harley {
     
     display: none;
