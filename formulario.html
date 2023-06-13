@@ -1,0 +1,156 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/formulario.css" />
+  </head>
+  <body>
+    <header>
+      <p>Descuentos 20%</p>
+    </header>
+    <h1>Super Héroes</h1>
+    <body>
+      <form action="">
+        <legend class="principle-title">Añadí tu super!</legend>
+        <p class="subtitle">
+          Agregá tu personaje favorito completando las opciones.
+        </p>
+        <div class="container">
+          <div class="first-continer">
+            <!-- Input nombre"-->
+            <div>
+              <label for="nombre">*Nombre</label>
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                required
+                oninvalid="setCustomValidity('Por favor, completar correctamente')"
+              />
+            </div>
+
+            <!-- input date Fecha nacimiento -->
+            <div>
+              <label for="fecha">Fecha</label>
+              <input
+                type="date"
+                name="fecha"
+                id="fecha"
+                value="2023-06-12"
+                min="2023-06-10"
+              />
+            </div>
+
+            <!-- textarea -->
+            <label for="descripcion"></label>
+            <textarea
+              name="descripcion"
+              id="descripcion"
+              resize="none"
+              placeholder="Descripcion"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </div>
+          <div class="second-container">
+            <!-- input select con optgroup-->
+            <label for="especie">*Especie</label>
+            <select name="especie" id="especie">
+              <option value="Especie1">Especie1</option>
+              <option value="Especie2">Especie2</option>
+              <option value="Especie3">Especie3</option>
+              <option value="Especie4">Especie4</option>
+            </select>
+            <!-- input file Imagen documento -->
+            <label for="foto">Agregar foto</label>
+            <input type="file" name="foto" id="foto" accept=".jpeg" multiple />
+            <legend>Poderes</legend>
+            <div class="inline">
+              <label for="Volar">
+                <input
+                  type="checkbox"
+                  name="poderes"
+                  id="Volar"
+                  value="Volar"
+                />
+                Volar
+              </label>
+            </div>
+            <div>
+              <label for="SuperInteligencia">
+                <input
+                  type="checkbox"
+                  name="poderes"
+                  id="SuperInteligencia"
+                  value="SuperInteligencia"
+                />
+                SuperInteligencia
+              </label>
+            </div>
+            <div>
+              <label for="Vista-de-rayo-laser">
+                <input
+                  type="checkbox"
+                  name="poderes"
+                  id="Vista-de-rayo-laser"
+                  value="Vista-de-rayo-laser"
+                />
+                Vista de rayo láser
+              </label>
+            </div>
+            <div>
+              <label for="Billetera-gorda">
+                <input
+                  type="checkbox"
+                  name="poderes"
+                  id="Billetera-gorda"
+                  value="Billetera-gorda"
+                />
+                Billetera gorda
+              </label>
+            </div>
+            <!-- Input radio -->
+            <p class="line">______________________________________</p>
+            <p>Tipo de personaje</p>
+            <div>
+              <label for="Heroe-Heroina" class="vert">
+                <input
+                  type="radio"
+                  name="tipo"
+                  id="Heroe-Heroina"
+                  value="Heroe-Heroina"
+                />
+                Héroe / Heroina
+              </label>
+            </div>
+            <div>
+              <label for="Villano-Villana" class="vert">
+                <input
+                  type="radio"
+                  name="tipo"
+                  id="Villano-Villana"
+                  value="Villano-Villana"
+                />
+                Villano / Villana
+              </label>
+            </div>
+            <br />
+          </div>
+        </div>
+
+        <!-- input submit y reset -->
+        <div class="buttons-container">
+          <button>Añadir</button>
+        </div>
+      </form>
+    </body>
+    <footer>
+      <div class="containerFooter">
+        <p>Todos los derechos reservados a FE1</p>
+        <img src="img/gitHub.svg" alt="Logo de gitHub" />
+      </div>
+    </footer>
+  </body>
+</html>
