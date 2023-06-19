@@ -12,7 +12,7 @@
     </header>
     <h1>Super Héroes</h1>
     <body>
-      <form action="">
+      <form action="" method="post">
         <legend class="principle-title">Añadí tu super!</legend>
         <p class="subtitle">
           Agregá tu personaje favorito completando las opciones.
@@ -26,6 +26,8 @@
                 type="text"
                 name="nombre"
                 id="nombre"
+                minlength="5"
+                placeholder="Claudia Naranjo"
                 required
                 oninvalid="setCustomValidity('Por favor, completar correctamente')"
               />
@@ -40,6 +42,7 @@
                 id="fecha"
                 value="2023-06-12"
                 min="2023-06-10"
+                required
               />
             </div>
 
@@ -67,7 +70,7 @@
             <label for="foto">Agregar foto</label>
             <input type="file" name="foto" id="foto" accept=".jpeg" multiple />
             <legend>Poderes</legend>
-            <div class="inline">
+            <p class="inline">
               <label for="Volar">
                 <input
                   type="checkbox"
@@ -77,8 +80,8 @@
                 />
                 Volar
               </label>
-            </div>
-            <div>
+            </p>
+            <p>
               <label for="SuperInteligencia">
                 <input
                   type="checkbox"
@@ -88,8 +91,8 @@
                 />
                 SuperInteligencia
               </label>
-            </div>
-            <div>
+            </p>
+            <p>
               <label for="Vista-de-rayo-laser">
                 <input
                   type="checkbox"
@@ -99,8 +102,8 @@
                 />
                 Vista de rayo láser
               </label>
-            </div>
-            <div>
+            </p>
+            <p>
               <label for="Billetera-gorda">
                 <input
                   type="checkbox"
@@ -110,11 +113,11 @@
                 />
                 Billetera gorda
               </label>
-            </div>
+            </p>
             <!-- Input radio -->
             <p class="line">______________________________________</p>
             <p>Tipo de personaje</p>
-            <div>
+            <p>
               <label for="Heroe-Heroina" class="vert">
                 <input
                   type="radio"
@@ -124,8 +127,8 @@
                 />
                 Héroe / Heroina
               </label>
-            </div>
-            <div>
+            </p>
+            <p>
               <label for="Villano-Villana" class="vert">
                 <input
                   type="radio"
@@ -135,7 +138,7 @@
                 />
                 Villano / Villana
               </label>
-            </div>
+            </p>
             <br />
           </div>
         </div>

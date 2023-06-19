@@ -9,11 +9,16 @@
 a i{
   font-size: 50px;
   position: sticky;
-  left:1200px;
+  left:1800px;
   top: 500px;
   z-index: 1;
 
 }
+
+a i:hover{
+  color:#001D2D
+}
+
 
 
 /********** ESTILOS PARA EL HEADER **********/

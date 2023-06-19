@@ -36,11 +36,30 @@
     margin-top: 20px;
     margin-bottom: 30px;    
     resize: none;
-    
+    color:black;
   }
+
+  input[type="text"][name="nombre"]:invalid{
+    border: 3px solid red;
+  }
+
+  input[type="text"]:valid{
+    border: 3px solid green;
+  }
+
+  input:focus, textarea:focus{
+    background-color: aqua;
+  }
+
+  input[type=date]{
+    color: black;
+
+  }
+
   label{
     color: white;
   }
+
   form textarea{
     width: 343px;
     height: 307px;
@@ -53,13 +72,38 @@
     
   }
 
-  input[type="checkbox"] {
-    height: 20px;
-    width: 24px;    
+input[type="radio"], input[type="checkbox"]{
+  -webkit-appearance : none;
+  appearance         : none;
+  width              : 22px;
+  height             : 22px;
+  margin             : calc(0.75em - 11px) 0.25rem 0 0;
+  border-radius      : 4px;
+  background         : #fff no-repeat center center;
+
 }
-input[type="radio"] {
-    height: 20px;
-    width: 20px;}
+input[type="radio"]{
+  border-radius : 50%;
+}
+
+/*input:where([type="checkbox"], [type="radio"]):where(:active:not(:disabled), :focus){
+  border-color : #696;
+  outline      : none;
+}
+
+input:where([type="checkbox"], [type="radio"]):disabled{
+  background : #eee;
+}*/
+
+input[type="radio"]:checked{
+  background-image: url('../img/check.png');
+}
+
+input[type="checkbox"]:checked{
+  background-image: url('../img/check1.png');
+}
+
+
 
 .vert {
     display: block;
@@ -72,6 +116,7 @@ input[type="radio"] {
 .buttons-container{
     text-align: center; 
     margin-bottom: 30px;
+    padding-bottom: 20px;
     
 }
 
@@ -81,7 +126,12 @@ button{
     border-radius: 23px;
     background: #1CD1B0;
     color: black;
+    font-size: 40px;
 
+}
+button:hover{
+  background:#001D2D;
+  color:#FFFFFF
 }
 
 input[type="date"] {
